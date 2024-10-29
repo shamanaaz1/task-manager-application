@@ -1,0 +1,120 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+}
+
+button {
+  margin-top: 10px;
+}
+
+.task-item {
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #8f7e7e;
+  border-radius: 5px;
+}
+
+.task-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+@media (max-width: 700px) {
+  .task-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+  }
+}
+
+@media (max-width: 600px) {
+  .task-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  }
+}
+
+@media (max-width: 400px) {
+  .task-buttons {
+    display: block;
+  }
+}
+
+.delete-button {
+  background-color: red;
+}
+
+.task-item:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #000000;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-color: #2a6eb7;
+  outline: none;
+}
+
+button {
+  padding: 10px;
+  background-color:#5e6b79;;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+}
